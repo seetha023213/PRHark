@@ -8,7 +8,7 @@ Running from command prompt: prerequisite: maven should be installed.
  Eg: cd "c:\users\seetha\git\prhark" followed by command: mvn package
 This creates a jar file in your project target directory.
 Run the jar using: java -jar target/prhawk-0.0.1-SNAPSHOT.jar
-this should run the application. Access the applciation using http://localhost:8080/user/{userName}
+this should run the application. Access the application using http://localhost:8080/user/{userName}
 
 Or you can run the application from Eclipse/any java IDE
 pre requisites: jdk 1.8 , Eclipse/Any java IDE ,maven(if IDE doesnot come with one)
