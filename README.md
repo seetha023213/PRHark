@@ -8,9 +8,9 @@ Running from command prompt: prerequisite: maven should be installed.
  Eg: cd "c:\users\seetha\git\prhark" followed by command: mvn package
 This creates a jar file in your project target directory.
 Run the jar using: java -jar target/prhawk-0.0.1-SNAPSHOT.jar
-this should run the applciation. Access the applciation using http://localhost:8080/user/{userName}
+this should run the application. Access the applciation using http://localhost:8080/user/{userName}
 
-Run the application from Eclipse/any java IDE
+Or you can run the application from Eclipse/any java IDE
 pre requisites: jdk 1.8 , Eclipse/Any java IDE ,maven(if IDE doesnot come with one)
 1. Run as maven install
 2. run the application.java file(it has main method(Spring boot) which loads the application with an inbuilt tomcat)
