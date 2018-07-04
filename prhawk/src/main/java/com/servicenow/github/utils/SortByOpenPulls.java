@@ -10,6 +10,7 @@ import com.servicenow.github.viewModel.GHUser;
  */
 public class SortByOpenPulls implements Comparator<GHUser> {
 
+	//Sorts in desc order of pull request count
 	public int compare(GHUser a, GHUser b) {
 		return b.getOpenPullCount() - a.getOpenPullCount();
 	}

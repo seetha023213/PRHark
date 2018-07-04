@@ -86,7 +86,7 @@ public class GHUserRepoServiceTest {
 	}
 
 	@Test
-	public void fetchAllRepoInfoRecTest() {
+	public void fetchAllRepoInfoRecTest() throws Exception {
 		this.server.expect(requestTo("https://api.github.com/users/user1/repos"))
 				.andRespond(withSuccess(detailsString, MediaType.APPLICATION_JSON));
 
@@ -97,7 +97,7 @@ public class GHUserRepoServiceTest {
 	}
 
 	@Test
-	public void populateUserRepoInfoTest() {
+	public void populateUserRepoInfoTest() throws Exception {
 		this.server.expect(requestTo("https://api.github.com/users/user1/repos?per_page=100"))
 				.andRespond(withSuccess(detailsString, MediaType.APPLICATION_JSON));
 
@@ -107,5 +107,7 @@ public class GHUserRepoServiceTest {
 		assertThat(resultList.get(0).getName()).isEqualTo("test1");
 		assertThat(resultList.get(0).getOpenPullCount()).isEqualTo(10);
 	}
+	
+	
 
 }

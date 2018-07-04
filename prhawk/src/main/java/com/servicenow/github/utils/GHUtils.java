@@ -36,11 +36,11 @@ public class GHUtils {
 	}
 
 	/**
-	 * getpageNumber get the page number from url - The last page number to
+	 * getpageNumber get the the last page number to
 	 * count no.of pull requests
 	 * 
 	 * @param url
-	 *            url
+	 *            url of last page
 	 */
 	public static String getpageNumber(String url) {
 

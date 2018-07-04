@@ -78,5 +78,14 @@ public class GHUserRepoControllerTest {
 		assertThat(result.getModelAndView().getViewName()).isEqualTo(ApplicationConstants.HELPER_PAGE);
 
 	}
+	
+
+	@Test
+	public void controllerExceptionsTest() throws Exception {
+		when(testservice.buildUserReposInfo("user1")).thenThrow(new Exception("Unauthorized User"));
+		MvcResult result = this.mockMvc.perform(get("/user/{userName}", "user1")).andReturn();
+		assertThat(result.getModelAndView().getViewName()).isEqualTo(ApplicationConstants.ERROR_PAGE);
+
+	}
 
 }

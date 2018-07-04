@@ -29,6 +29,7 @@ public final class ApplicationConstants {
 	public static final String EQUALS = "=";
 
 	public static final String USER_REPO_INFO_VIEW = "/userRepoInfo";
-	public static final String HELPER_PAGE = "/error";
+	public static final String HELPER_PAGE = "/helperPage";
+	public static final String ERROR_PAGE = "error";
 
 }
