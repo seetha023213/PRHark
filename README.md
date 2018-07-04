@@ -17,3 +17,7 @@ this should run the application. Access the application using http://localhost:8
 Prerequisite: JDK 1.8 , Eclipse/Any java IDE ,maven(if IDE does not come with one)
 a. Run as maven install
 b. Run the application.java file(it has main method(Spring boot) which loads the application with an inbuilt tomcat)
+
+Before running the application please update the github credentials in the application.properties file located at src/main/resources. Below are the credential properties -
+github.userName=
+github.password=
