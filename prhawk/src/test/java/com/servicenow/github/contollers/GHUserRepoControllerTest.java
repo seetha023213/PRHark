@@ -79,6 +79,13 @@ public class GHUserRepoControllerTest {
 
 	}
 	
+	@Test
+	public void controllerHelperEndPointwithUserTest() throws Exception {
+		MvcResult result = this.mockMvc.perform(get("/user")).andReturn();
+		assertThat(result.getModelAndView().getViewName()).isEqualTo(ApplicationConstants.HELPER_PAGE);
+
+	}
+	
 
 	@Test
 	public void controllerExceptionsTest() throws Exception {

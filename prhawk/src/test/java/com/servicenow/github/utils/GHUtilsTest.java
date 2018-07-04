@@ -46,6 +46,14 @@ public class GHUtilsTest {
 		assertThat(pageNumber).isEqualTo("3");
 
 	}
+	
+	@Test
+	public void getpageNumberNullTest() {
+
+		String pageNumber = GHUtils.getpageNumber(null);
+		assertThat(pageNumber).isEqualTo(null);
+
+	}
 
 	@Test
 	public void sortByNoOfpullReqTest() {
