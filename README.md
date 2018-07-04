@@ -15,5 +15,5 @@ this should run the application. Access the application using http://localhost:8
 
 2) Run the application from Eclipse/any java IDE
 Prerequisite: JDK 1.8 , Eclipse/Any java IDE ,maven(if IDE does not come with one)
-1. Run as maven install
-2. Run the application.java file(it has main method(Spring boot) which loads the application with an inbuilt tomcat)
+a. Run as maven install
+b. Run the application.java file(it has main method(Spring boot) which loads the application with an inbuilt tomcat)
