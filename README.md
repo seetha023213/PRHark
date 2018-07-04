@@ -1,7 +1,7 @@
 # PRHawk - Is a Spring boot application . Comes with an in-built Tomcat webserver.
 Ways to execute -
 1) Running from command prompt: 
-Prerequisite: maven, JDK 1.8 should be installed.
+Prerequisite: maven (3.5.0), JDK 1.8 should be installed.
 Instructions to execute from command prompt -
 a. Download the project from github. 
 b. Run the below commands:
@@ -14,7 +14,7 @@ Run the jar using: java -jar target/prhawk-0.0.1-SNAPSHOT.jar
 this should run the application. Access the application using http://localhost:8080/user/{userName}
 
 2) Run the application from Eclipse/any java IDE
-Prerequisite: JDK 1.8 , Eclipse/Any java IDE ,maven(if IDE does not come with one)
+Prerequisite: JDK 1.8 , Eclipse/Any java IDE ,maven (3.5.0)(if IDE does not come with one)
 a. Run as maven install
 b. Run the application.java file(it has main method(Spring boot) which loads the application with an inbuilt tomcat)
 
